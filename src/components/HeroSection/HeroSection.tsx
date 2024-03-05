@@ -3,11 +3,6 @@ import "./herosection.css";
 import HorizontalLine from "../common/HorizontalLine";
 import CV_Form from "../../img/ATTA_CV_Form.pdf";
 import { useEffect, useState } from "react";
-import Atropos from "atropos/react";
-import bgGradient from "../../img/bg-gradient.png";
-import mmbusBg from "../../img/mmbus-bg.png";
-import heroBg from "../../img/hero-bg.png";
-import gradientCircle from "../../img/gradient-circle.svg";
 
 function HeroSection() {
   // const [opacity, setOpacity] = useState(1);
