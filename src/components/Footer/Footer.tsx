@@ -1,5 +1,5 @@
 import "./footer.css";
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef, useEffect } from "react";
 import facebook from "../../img/facebook.png";
@@ -21,7 +21,6 @@ function Footer() {
     message: "",
   });
 
-  let toast = document.getElementById("toast");
   const [formErrors, setFormErrors] = useState<Partial<FormData>>({});
 
   useEffect(() => {
@@ -180,6 +179,7 @@ function Footer() {
             <a
               href="https://www.linkedin.com/in/aye-theint-theint-aung-12b790222/"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 src={linkedIn}
@@ -188,7 +188,11 @@ function Footer() {
             </a>
           </div>
           <div className="px-2">
-            <a href="https://www.facebook.com/xing.ai.756" target="_blank">
+            <a
+              href="https://www.facebook.com/xing.ai.756"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src={facebook}
                 className="img-fluid social-icon-footer"
@@ -196,7 +200,11 @@ function Footer() {
             </a>
           </div>
           <div className="px-2">
-            <a href="https://github.com/atta-155" target="_blank">
+            <a
+              href="https://github.com/atta-155"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={github} className="img-fluid social-icon-footer"></img>
             </a>
           </div>
