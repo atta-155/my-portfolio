@@ -1,0 +1,95 @@
+.product-card{
+    /* height: 90vh; */
+}
+.project-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mmbus-section{
+    position: relative;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(21,40,84,1) 0%, rgba(0,0,0,1) 100%); 
+}
+
+.mmquickshop-section{
+    position: relative;
+    background: #F6F6F6;
+}
+.unipay-section{
+    position: relative;
+    background: #F6F6F6;
+}
+.hotelpms-section{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(21,40,84,1) 0%, rgba(0,0,0,1) 100%); 
+}
+
+.innoveller-section{
+    background: #E3EFFF;
+}
+
+.insurance-section{
+    background: #FAEFDC;
+}
+
+.myanchaw-section{
+    position: relative;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(21,40,84,1) 0%, rgba(0,0,0,1) 100%); 
+}
+
+
+.mmbus-img{
+    /* width: 800px;
+    height: 400px;
+    object-fit: contain; */
+}
+
+.mmquickshop-img{
+    /* width: 450px;
+    height: 450px;
+    object-fit: contain; */
+}
+
+.hotelPMS-img{
+    /* width: 800px;
+    height: 500px;
+    object-fit: contain; */
+}
+
+.innoveller-img{
+    /* width: 800px;
+    height: 500px;
+    object-fit: contain; */
+}
+
+.insurance-img{
+    /* width: 800px;
+    height: 500px;
+    object-fit: contain; */
+}
+
+.myanchaw-img{
+    /* width: 800px;
+    height: 500px;
+    object-fit: contain; */
+}
+
+
+.tech-icon{
+    float: left;
+    width:  35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.tech-label{
+    color: #c4c4c4;
+    font-size: 12px;
+}
+
+.tech-label-light{
+    color: #000;
+    font-size: 12px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fade In/Fade Out Text on Scroll</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", sans-serif;
+      }
+
+      .hero-section {
+        position: relative;
+        height: 200vh;
+        background: url("your-hero-image.jpg") center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid aqua;
+      }
+
+      .hero-text {
+        position: fixed;
+        color: #000;
+        font-size: 3em;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.8s ease-in-out;
+        height: 100vh;
+      }
+      .second-text {
+        height: 100vh;
+        font-size: 3em;
+
+        /* position: fixed; */
+        transition: opacity 0.8s ease-in-out;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-section">
+      <div class="hero-text" id="fadeText">Discover Apple Watch Series 9</div>
+      <div class="second-text" id="secondText">Test</div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const heroText = document.getElementById("fadeText");
+        const secondText = document.getElementById("secondText");
+
+        window.addEventListener("scroll", function () {
+          const scrollPosition = window.scrollY;
+          const windowHeight = window.innerHeight;
+          console.log("scrollPosition: ", scrollPosition);
+          console.log("windowHeight: ", windowHeight);
+
+          // Calculate the distance from the top of the viewport to the element
+          const elementOffset = heroText.offsetTop;
+          const secondTextElementOffset = secondText.offsetTop;
+
+          console.log("elementOffset: ", elementOffset);
+
+          const secondToElement =
+            scrollPosition - secondTextElementOffset + windowHeight;
+          // console.log("distanceToElement: ", distanceToElement);
+
+          if (
+            scrollPosition > elementOffset - windowHeight &&
+            scrollPosition < elementOffset + windowHeight
+          ) {
+            const distanceToElement =
+              scrollPosition - elementOffset + windowHeight;
+            const opacity = 1 - distanceToElement / windowHeight;
+            heroText.style.opacity = Math.max(0, opacity);
+          } else {
+            heroText.style.opacity = 0;
+          }
+
+          // Calculate the opacity based on the distance
+          const opacity = 1 - distanceToElement / windowHeight;
+          const opacity2 = 1 - secondToElement / windowHeight;
+          console.log("opacity: ", opacity);
+          // heroText.style.opacity = Math.max(0, opacity); // Ensure opacity doesn't go below 0
+          heroText.style.opacity = opacity;
+          secondText.style.opacity = opacity2;
+        });
+      });
+    </script>
+  </body>
+</html>

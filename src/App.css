@@ -1,5 +1,27 @@
 .App {
-  text-align: center;
+  background-color: black;
+  font-family: 'Noto Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+#side-bar{
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  /* padding: 8px 0; */
+}
+
+#sidenav a:hover {
+  color: #064579;
 }
 
 .App-logo {
@@ -14,18 +36,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  /* font-size: calc(10px + 2vmin);
+  color: white;  */
+}
+
+.full-screen{
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ED673C !important;
+  text-decoration: none !important;
+}
+
+.App-link:hover{
+  text-decoration: underline !important;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +70,282 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.theme-color{
+  color: #ED673C;
+}
+
+.header{
+  font-size: 100px;
+  /* color: #ED673C; */
+  font-weight: 700;
+  text-align: center;
+  background: #ED673C;
+  background: linear-gradient(90deg, rgba(228,122,55,1) 0%, rgba(181,131,255,1) 100%); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10vh); }
+  100% { opacity: 1;  transform: translateY(0vh);}
+}
+/* 
+@keyframes text-wipe {
+  0% {
+      opacity: 1;
+      -webkit-mask-position: 100%;
+  }
+
+  100% {
+      opacity: 1;
+      -webkit-mask-position: 0%;
+  }
+} */
+
+.title{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.subtitle-1{
+  font-size: 25px;
+  font-weight: 350;
+  color: white;
+}
+
+.subtitle-2{
+  font-size: 20px;
+  font-weight: 350;
+  color: white;
+}
+
+.subtitle-3{
+  font-size: 20px;
+  font-weight: 350;
+  color: #c4c4c4;
+}
+
+.decor-text{
+  font-size: 20px;
+  font-family: 'Quintessential', serif;
+  color: #c4c4c4;
+}
+
+
+.pill-button {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px; /* 50% of the width for a pill shape */
+  background-color: #ED673C; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+
+}
+
+/* Darker background color on hover */
+.pill-button:hover {
+  background-color: #C04D2F; /* Darker color on hover */
+}
+
+/* Even darker background color on active (button press) */
+.pill-button:active {
+  background-color: #A04127; /* Even darker color on active */
+}
+
+.small-text{
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.error-message{
+  font-size: 12px;
+  color: #c55b5b;
+}
+.outline-button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px; /* 50% of the width for a pill shape */
+  /* background-color: #ED673C; Button background color */
+  color: #ED673C; /* Button text color */
+  border: 1px #ED673C solid;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Darker background color on hover */
+.outline-button:hover {
+  background-color: #C04D2F; /* Darker color on hover */
+  color: white;
+}
+
+/* Even darker background color on active (button press) */
+.outline-button:active {
+  background-color: #A04127; /* Even darker color on active */
+  color: white;
+}
+
+.fa{
+  color: #c4c4c4;
+}
+.fa:hover {
+  color: #ED673C !important;
+}
+
+.root-section{
+  position: relative;
+  /* height: 1000vh; */
+  width: 100%;
+}
+
+.btn-outline-primary {
+  color: #ED673C;
+  border-color: #ED673C;
+
+}
+.btn-outline-primary:hover {
+  color: #ffffff; 
+  background-color: #ED673C;
+  border-color: #ED673C; 
+}
+.btn-outline-primary:focus {
+  color: #ffffff; 
+  background-color: #ED673C;
+  border-color: #ED673C; 
+}
+.btn:disabled{
+  color: #d33f0e !important; 
+  border-color: #d33f0e !important; 
+}
+
+
+.btn-primary {
+  color: #ffffff; 
+  background-color: #ED673C;
+  border-color: #ED673C; 
+}
+.btn-primary:hover {
+  color: #ffffff; 
+  background-color: #c95630;
+  border-color: #c95630; 
+}
+
+.btn-primary:focus {
+  color: #ffffff; 
+  background-color: #c95630;
+  border-color: #c95630; 
+}
+
+.social-icon{
+  width: 32px
+}
+
+.social-icon-footer{
+  width: 24px
+}
+#home{
+  /* background-color: black; */
+  /* transition: opacity 0.5s ease; */
+}
+#project{
+  /* position: fixed; */
+  /* background-color: black;
+  opacity: 1; */
+  /* transition: opacity 0.5s ease; */
+}
+
+#project-content{
+  /* opacity: 0; */
+  /* background-color: black;
+  display: block; */
+}
+/* 
+#experience{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#education{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#education{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#technical-skill{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#footer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opaczity: 0;
+} */
+
+
+
+/* Extra Small Devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header{
+    font-size: 60px;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+
+}
+
+/* Small Devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .header{
+    font-size: 70px;
+  }
+  .title{
+    font-size: 30px;
+  }
+
+}
+
+/* Medium Devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .header{
+    font-size: 90px;
+  }
+  .title{
+    font-size: 35px;
+  }
+}
+
+/* Large Devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .header{
+    font-size: 100px;
+  }
+
 }

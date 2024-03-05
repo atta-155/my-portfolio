@@ -1,0 +1,24 @@
+.footer{
+    background-color: #0F0E14;
+    /* background-image: url("../../img/B.png"); */
+    /* background-size: cover; */
+}
+
+.footer input, .footer textarea {
+    background-color: #2F2E36;
+    border: none;
+    color: white;
+} 
+
+.footer input:focus, .footer textarea:focus {
+    background-color: #2F2E36;
+    border-color: #202020; /* Change this to your desired border color */
+    box-shadow: 0 0 0 0.2rem #272727; /* Optional: Add a subtle box shadow */
+    color: white;
+
+} 
+
+.footer input::placeholder, .footer textarea::placeholder{
+    color: rgb(160, 160, 160);
+    font-size: small;
+}

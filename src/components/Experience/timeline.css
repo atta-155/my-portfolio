@@ -1,0 +1,82 @@
+/* Timeline holder */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 5rem;
+    color: white;
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    /* background: #fff; */
+    background: rgb(237,103,60);
+    background: linear-gradient(315deg, rgba(237,103,60,0.6306723372942927) 0%, rgba(201,113,236,1) 28%, rgba(230,159,137,1) 62%, rgba(237,103,60,1) 100%); 
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+    background-color: #0F0E14;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ED673C;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.desc-list{
+    line-height: 30px;
+}
+
+
+.text-gray {
+    color: #999;
+}
+
+
+  
+/* Extra Small Devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    ul.timeline:before {
+        left: 8px;
+    }
+
+    ul.timeline {
+        padding-left: 2rem;
+    }  
+
+    li.timeline-item::before {
+        left: 3px;
+    }
+    
+  }
