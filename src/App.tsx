@@ -12,8 +12,6 @@ import Education from "./components/Education/Education";
 import TechnicalSkillTitle from "./components/TechnicalSkill/TechnicalSkillTitle";
 import TechnicalSkill from "./components/TechnicalSkill/TechnicalSkill";
 import Footer from "./components/Footer/Footer";
-import { prettyFormat } from "@testing-library/react";
-import { motion, useViewportScroll } from "framer-motion";
 
 function App() {
   // const { scrollYProgress } = useViewportScroll();
