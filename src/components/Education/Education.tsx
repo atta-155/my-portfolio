@@ -18,21 +18,21 @@ function Education() {
           <div className="col-lg-6 col-12 ">
             <EducationCard
               title="National Team Selection for ACM-ICPC Programming Contest"
-              date="Dec, 2014 - Feb 2019"
+              date=""
               organization="icpc.foundation"
             ></EducationCard>
           </div>
           <div className="col-lg-6 col-12">
             <EducationCard
               title="Samsung Tech Institute Mobile Application Training"
-              date="Dec, 2014 - Feb 2019"
+              date=""
               organization="Global New Wave Technology Co.,Ltd"
             ></EducationCard>
           </div>
           <div className="col-lg-6 col-12">
             <EducationCard
               title="PHP Web Developer Bootcamp"
-              date="Dec, 2014 - Feb 2019"
+              date=""
               organization="Myanmar IT Consulting"
             ></EducationCard>
           </div>

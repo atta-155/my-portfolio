@@ -13,7 +13,7 @@ const Experience = () => {
               duration="March, 2023 - Present"
               descList={[
                 "Contributed to the development and maintenance of enterprise-level Digital Payment System.",
-                "Engaged int the development of the Travel Insurance Project, incorporating seamless payment processing through Cybersource Payment Integrator.",
+                "Engaged in the development of the Travel Insurance Project, incorporating seamless payment processing through CyberSource Payment Integrator.",
                 "Work closely with the design and QA team to ensure the quality of the software.",
                 "Provide documentation and user-manual to internal and external users.",
               ]}
